@@ -115,9 +115,14 @@ Distributed under the MIT License. See `LICENSE.md` for more information.
 
 ## Acknowledgments
 
-- []()
-- []()
-- []()
+- [RPG Monster Duo PBR Polyart](https://assetstore.unity.com/packages/3d/characters/creatures/rpg-monster-duo-pbr-polyart-157762)
+- [POLYGON Starter Pack - Low Poly 3D Art by Synty](https://assetstore.unity.com/packages/3d/props/polygon-starter-pack-low-poly-3d-art-by-synty-156819)
+- [Meshtint Free Boximon Fiery Mega Toon Series](https://assetstore.unity.com/packages/3d/characters/meshtint-free-boximon-fiery-mega-toon-series-153958)
+- [Meshtint Free Boximon Cyclopes Mega Toon Series](https://assetstore.unity.com/packages/3d/characters/meshtint-free-boximon-cyclopes-mega-toon-series-154436)
+- [FREE EpicMobile 3d Voxel Forest And Atolls - Winter Set](https://assetstore.unity.com/packages/3d/environments/landscapes/free-epicmobile-3d-voxel-forest-and-atolls-winter-set-212686)
+- [Nature Pack - Low Poly Trees & Bushes](https://assetstore.unity.com/packages/3d/vegetation/nature-pack-low-poly-trees-bushes-210184)
+- [CubexCube - Free Medieval Cemetery Pack](https://assetstore.unity.com/packages/3d/environments/fantasy/cubexcube-free-medieval-cemetery-pack-199755)
+- [Low-Poly Simple Nature Pack](https://assetstore.unity.com/packages/3d/environments/landscapes/low-poly-simple-nature-pack-162153)
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
