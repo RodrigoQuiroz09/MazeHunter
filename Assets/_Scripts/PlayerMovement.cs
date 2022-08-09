@@ -20,7 +20,7 @@ public class PlayerMovement : MonoBehaviour
     {
         _rb = GetComponent<Rigidbody>();     
         m_Collider = GetComponent<Collider>();   
-        m_MaxDistance = .2f;
+        m_MaxDistance = .3f;
     }
 
     public void MoveTowards(Vector2 input)
