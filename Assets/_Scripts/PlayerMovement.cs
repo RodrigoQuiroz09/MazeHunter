@@ -20,26 +20,21 @@ public class PlayerMovement : MonoBehaviour
     {
         _rb = GetComponent<Rigidbody>();     
         m_Collider = GetComponent<Collider>();   
-        m_MaxDistance = .3f;
+        m_MaxDistance = .5f;
     }
 
     public void MoveTowards(Vector2 input)
     {
-
         Vector3 moveDirection = new Vector3(input.x, 0, input.y);
         moveDirection.Normalize();
         if (moveDirection != Vector3.zero) transform.forward = moveDirection;
         if (!m_HitDetect) transform.Translate(moveDirection * speed * Time.deltaTime, Space.World);
-
-
     }
 
     void FixedUpdate()
     {
-        m_HitDetect = Physics.BoxCast(m_Collider.bounds.center, Vector3.one / 2f, transform.forward, out m_Hit, transform.rotation, m_MaxDistance);
-
+        m_HitDetect = Physics.BoxCast(transform.position, Vector3.one/5, transform.forward, out m_Hit, transform.rotation, m_MaxDistance);
     }
-
 
     void OnDrawGizmos()
     {
