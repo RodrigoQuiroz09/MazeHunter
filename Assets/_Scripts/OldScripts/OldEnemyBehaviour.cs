@@ -2,10 +2,10 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.AI;
-public class EnemyBehaviour : MonoBehaviour
+public class OldEnemyBehaviour : MonoBehaviour
 {
     NavMeshAgent agent;
-    public PlayerController player;
+    public OldPlayerController player;
     public Transform[] corners;
 
     void Awake()

@@ -3,12 +3,13 @@ using System.Collections.Generic;
 using UnityEngine;
 
 [RequireComponent(typeof(Rigidbody))]
-public class PlayerMovement : MonoBehaviour
+public class OldPlayerMovement : MonoBehaviour
 {
     [Tooltip("Velocidad del Movimiento del personaje en N/s")]
     [Range(0, 100)]
     public float speed;
     private Rigidbody _rb;
+
     bool m_HitDetect;
 
     Collider m_Collider;
@@ -33,7 +34,8 @@ public class PlayerMovement : MonoBehaviour
 
     void FixedUpdate()
     {
-        m_HitDetect = Physics.BoxCast(transform.position, Vector3.one/5, transform.forward, out m_Hit, transform.rotation, m_MaxDistance);
+        //    m_HitDetect = Physics.BoxCast(transform.position, Vector3.one/5, transform.forward, out m_Hit, transform.rotation, m_MaxDistance);
+        m_HitDetect = Physics.BoxCast(transform.position, Vector3.one / 5, transform.forward, out m_Hit, transform.rotation, m_MaxDistance, OldGameLayers.SharedInstance.CollisionLayers);
     }
 
     void OnDrawGizmos()
@@ -50,5 +52,6 @@ public class PlayerMovement : MonoBehaviour
             Gizmos.DrawRay(transform.position, transform.forward * m_MaxDistance);
             Gizmos.DrawWireCube(transform.position + transform.forward * m_MaxDistance, transform.localScale);
         }
+ 
     }
 }

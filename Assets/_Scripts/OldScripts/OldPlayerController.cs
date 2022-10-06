@@ -2,17 +2,17 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-[RequireComponent(typeof(PlayerMovement))]
-public class PlayerController : MonoBehaviour
+[RequireComponent(typeof(OldPlayerMovement))]
+public class OldPlayerController : MonoBehaviour
 {
 
-    PlayerMovement _playerMovement;
+    OldPlayerMovement _playerMovement;
 
     Vector2 input;
 
     void Start()
     {
-        _playerMovement = GetComponent<PlayerMovement>();
+        _playerMovement = GetComponent<OldPlayerMovement>();
     }
 
     void Update()
