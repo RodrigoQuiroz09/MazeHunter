@@ -4,7 +4,7 @@ using UnityEngine;
 
 namespace MazeHunter.Player
 {
-        [RequireComponent(typeof(CharacterGridMovement))]
+    [RequireComponent(typeof(CharacterGridMovement))]
     public class Character : MonoBehaviour
     {
             
