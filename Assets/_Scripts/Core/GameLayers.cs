@@ -7,8 +7,10 @@ namespace MazeHunter
     public class GameLayers : MonoBehaviour
     {
     [SerializeField] private LayerMask wallObjLayer;
+    [SerializeField] private LayerMask playerObjLayer;
 
     public LayerMask WallObjLayer => wallObjLayer;
+    public LayerMask PlayerObjLayer => playerObjLayer;
 
     public static GameLayers SharedInstance;
 
@@ -17,6 +19,5 @@ namespace MazeHunter
         if (SharedInstance == null) SharedInstance = this;
     }
 
-    public LayerMask CollisionLayers => wallObjLayer;
     }
 }

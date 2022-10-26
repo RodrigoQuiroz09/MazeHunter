@@ -53,7 +53,7 @@ namespace MazeHunter.Player
 
         bool IsPathAvailable()
         {
-             return Physics.BoxCast(transform.position, Vector3.one / 5, transform.forward, out m_Hit, transform.rotation, m_MaxDistance, GameLayers.SharedInstance.CollisionLayers);
+             return Physics.BoxCast(transform.position, Vector3.one / 5, transform.forward, out m_Hit, transform.rotation, m_MaxDistance, GameLayers.SharedInstance.WallObjLayer);
         }
 
         void OnDrawGizmos()

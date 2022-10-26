@@ -16,6 +16,7 @@ GameObject:
   - component: {fileID: 854308747406255699}
   - component: {fileID: 854308747406255698}
   - component: {fileID: 854308747406255689}
+  - component: {fileID: 3403941273437677679}
   m_Layer: 0
   m_Name: Enemy
   m_TagString: Untagged
@@ -149,7 +150,7 @@ MonoBehaviour:
     maximumInterval: 2
     visualizeSensitivity: 0
   canMove: 1
-  speed: 4
+  speed: 5
   orientation: 0
   enableRotation: 1
   rotationSpeed: 10
@@ -188,3 +189,22 @@ MonoBehaviour:
   BasePositions:
   - {fileID: 0}
   - {fileID: 0}
+  PatrolPositions:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+--- !u!114 &3403941273437677679
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 854308747406255697}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5fe04662fae2ace458cd74fa2ea3e84d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  distance: 10
+  angle: 180
+  detectedTarget: {fileID: 0}
