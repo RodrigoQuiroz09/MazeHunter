@@ -7,15 +7,17 @@ namespace MazeHunter.Player
     [RequireComponent(typeof(CharacterGridMovement))]
     public class Character : MonoBehaviour
     {
-            
-        
+                    
         CharacterGridMovement _playerMovement;
 
         Vector2 input;
 
+        IAbility ability;
+
         void Start()
         {
             _playerMovement = GetComponent<CharacterGridMovement>();
+            ability = GetComponent<IAbility>();
         }
 
         void Update()
@@ -30,6 +32,10 @@ namespace MazeHunter.Player
                     if (input.y != 0) input.x = 0;
                     StartCoroutine( _playerMovement.MoveTowards(input));
                 }
+            }
+            if(Input.GetKeyDown(KeyCode.Space))
+            {
+                ability.Action();
             }
         }
     }
